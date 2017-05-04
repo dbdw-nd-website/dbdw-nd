@@ -19,9 +19,21 @@
 
 
   <link rel="icon" type="image/x-icon" href="fav.ico">
+
+<script>
+  // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
+  (function(){
+    var redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+    if (redirect && redirect != location.href) {
+      history.replaceState(null, null, redirect);
+    }
+  })();
+</script>
+
 <link href="styles.96979d2a2b13225115a1.bundle.css" rel="stylesheet"/></head>
 <body>
   
   <app-root></app-root>
-<script type="text/javascript" src="inline.3c629864b729e128634b.bundle.js"></script><script type="text/javascript" src="polyfills.9e9cbe6ad66f4c9cc342.bundle.js"></script><script type="text/javascript" src="scripts.2092a685572cf1cb3923.bundle.js"></script><script type="text/javascript" src="vendor.fec463256b6f6ef68dc4.bundle.js"></script><script type="text/javascript" src="main.08a8ed4a2193219605b3.bundle.js"></script></body>
+<script type="text/javascript" src="inline.cbe02488532ddc2b2317.bundle.js"></script><script type="text/javascript" src="polyfills.9e9cbe6ad66f4c9cc342.bundle.js"></script><script type="text/javascript" src="scripts.2092a685572cf1cb3923.bundle.js"></script><script type="text/javascript" src="vendor.fec463256b6f6ef68dc4.bundle.js"></script><script type="text/javascript" src="main.5d8a023436101567b835.bundle.js"></script></body>
 </html>
